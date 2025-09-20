@@ -2,41 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Industrial Design System for Jangid Enterprises
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 222 25% 15%;
 
+    /* Industrial Blue Theme */
+    --primary: 219 89% 25%;
+    --primary-foreground: 0 0% 98%;
+    --primary-light: 219 89% 35%;
+    --primary-dark: 219 89% 18%;
+
+    /* Steel Gray Palette */
+    --secondary: 220 15% 25%;
+    --secondary-foreground: 0 0% 98%;
+    --secondary-light: 220 15% 35%;
+
+    /* Industrial Orange Accent */
+    --accent: 25 95% 55%;
+    --accent-foreground: 0 0% 98%;
+    --accent-light: 25 95% 65%;
+
+    /* Card and Surface Colors */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 222 25% 15%;
+    --card-hover: 220 15% 97%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    /* Muted Tones */
+    --muted: 220 15% 96%;
+    --muted-foreground: 220 10% 45%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Border and Input */
+    --border: 220 15% 88%;
+    --input: 220 15% 94%;
+    --ring: 219 89% 25%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Destructive */
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Industrial Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(219 89% 25%) 0%, hsl(220 15% 25%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(220 15% 97%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(25 95% 55%) 0%, hsl(25 95% 65%) 100%);
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Industrial Shadows */
+    --shadow-industrial: 0 4px 6px -1px hsl(220 15% 25% / 0.15), 0 2px 4px -1px hsl(220 15% 25% / 0.08);
+    --shadow-card: 0 2px 8px hsl(220 15% 25% / 0.1);
+    --shadow-hero: 0 20px 60px hsl(219 89% 25% / 0.3);
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
